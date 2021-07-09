@@ -21,26 +21,25 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// aboutCmd represents the about command
-var aboutCmd = &cobra.Command{
-	Use:   "about",
-	Short: "About the author and app",
+// versionCmd represents the version command
+var versionCmd = &cobra.Command{
+	Use:   "version",
+	Short: "Display the version number",
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("ROTAS-CLI")
-		fmt.Println("(c) 2021, @alphaX86")
+		fmt.Println("ROTAS v0.0.1")
 	},
 }
 
 func init() {
-	rootCmd.AddCommand(aboutCmd)
+	rootCmd.AddCommand(versionCmd)
 
 	// Here you will define your flags and configuration settings.
 
 	// Cobra supports Persistent Flags which will work for this command
 	// and all subcommands, e.g.:
-	// aboutCmd.PersistentFlags().String("foo", "", "A help for foo")
+	// versionCmd.PersistentFlags().String("foo", "", "A help for foo")
 
 	// Cobra supports local flags which will only run when this command
 	// is called directly, e.g.:
-	// aboutCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
+	// versionCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
 }

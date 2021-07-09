@@ -1,5 +1,5 @@
 /*
-Copyright © 2021 NAME HERE <EMAIL ADDRESS>
+Copyright © 2021 Aadhitya A
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -18,6 +18,7 @@ package cmd
 import (
 	"fmt"
 	"os"
+
 	"github.com/spf13/cobra"
 
 	"github.com/spf13/viper"
@@ -29,12 +30,14 @@ var cfgFile string
 var rootCmd = &cobra.Command{
 	Use:   "rotas",
 	Short: "A brief description of your application",
-	Long: `A longer description that spans multiple lines and likely contains
-examples and usage of using your application. For example:
-
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+	Long: `
+	______ _____ _____ ___   _____ 
+	| ___ \  _  |_   _/ _ \ /  ___|
+	| |_/ / | | | | |/ /_\ \\ --. 
+	|    /| | | | | ||  _  | --. \
+	| |\ \\ \_/ / | || | | |/\__/ /
+	\_| \_|\___/  \_/\_| |_/\____/ 
+									`,
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	// Run: func(cmd *cobra.Command, args []string) { },
